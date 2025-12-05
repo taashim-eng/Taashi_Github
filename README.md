@@ -1,4 +1,4 @@
-# Hi there! I'm Taashiken 👋
+# Hi there! I'm Taashi 👋
 
 I'm a passionate Data Engineer and Engineering Manager focused on building robust, scalable data platforms and leading high-performing teams. This profile is currently being updated to showcase my latest work and portfolio.
 
@@ -10,4 +10,4 @@ I'm a passionate Data Engineer and Engineering Manager focused on building robus
 
 ---
 
-*This profile is managed by an automated script. Last updated: 2025-12-05 17:49:38*
+*TLast updated: 2025-12-05 17:49:38*
