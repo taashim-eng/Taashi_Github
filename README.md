@@ -1,4 +1,4 @@
-# f44b Hi, I'm Taashi Manyanga
+#Hi, I'm Taashi Manyanga
 
 **Senior Data Engineering & Analytics Leader | 12+ Years Building High-Performing Teams & Scalable Platforms**
 
@@ -9,7 +9,7 @@
 
 ---
 
-## f3af Who I Am
+##Who I Am
 
 I'm a **data engineering leader** with 12+ years architecting enterprise platforms that process millions of events daily. My expertise spans **building high-trust engineering cultures**, **shipping production systems at scale**, and **balancing technical depth with people leadership**.
 
