@@ -11,7 +11,7 @@ Seattle, WA | f4bc Engineering Manager @ Fluke Corporation | f393 Foster Busin
 
 Who I Am
 
-I'm a **data engineering leader** with 12+ years architecting enterprise platforms that process millions of events daily. My expertise spans **building high-trust engineering cultures**, **shipping production systems at scale**, and **balancing technical depth with people leadership**.
+I'm a **data engineering leader** with 15+ years architecting enterprise platforms that process millions of events daily. My expertise spans **building high-trust engineering cultures**, **shipping production systems at scale**, and **balancing technical depth with people leadership**.
 
 **Current Role:** Leading platform transformation at Fluke Corporation, where my team has:
 - f50c **Reduced latency by 70%** through cloud-native architecture migration
@@ -46,7 +46,7 @@ I'm a **data engineering leader** with 12+ years architecting enterprise platfor
 ## Technical Stack
 
 **Cloud Platforms:** AWS 	 Azure 	 GCP (BigQuery) 	 Multi-cloud architecture  
-**Data Engineering:** Apache Spark 	 Kafka 	 Airflow 	 dbt 	 Python 	 SQL  
+**Data Engineering:** Apache Spark 	 Kafka 	 Airflow 	 dbt 	 Python 	 SQL  ADF
 **Data Warehouses:** Databricks 	 Snowflake 	 BigQuery 	 Azure Synapse  
 **DevOps & Quality:** CI/CD 	 GitHub Actions 	 pytest 	 Great Expectations 	 Docker  
 **AI/ML:** GPT APIs 	 LangChain 	 MCP 	 Production ML systems  
@@ -106,7 +106,7 @@ I'm a **data engineering leader** with 12+ years architecting enterprise platfor
 f525 **Advanced Distributed Systems** - Building for global scale  
 f9e0 **LLM Fine-tuning** & prompt engineering for production AI  
 	2601 **Multi-cloud optimization** - AWS + Azure + GCP patterns  
-f4da **Engineering Management** - Foster Business School MS '26
+f4da **Machine Learning, AI and Info Sysytems** - Foster Business School MS '26
 
 ---
 
@@ -123,7 +123,7 @@ I'm currently exploring **Director and Senior Manager Data Engineering** opportu
 f4e7 **Email:** taashir@gmail.com  
 f4bc **LinkedIn:** [linkedin.com/in/taashi-m-74b14a161](https://linkedin.com/in/taashi-m-74b14a161)  
 f4cd **Location:** Seattle, WA | **Open to:** Remote opportunities  
-f393 **Education:** MS Information Systems (Foster '26), BSc Economics (Applied Statistics)
+f393 **Education:** MS Information Systems (Foster '26), BSc Economics (Applied Statistics and Econometrics)
 
 ---
 
@@ -131,10 +131,10 @@ I'm currently exploring **Director and Senior Manager Data Engineering** opportu
 
 ### **Ideal Role Characteristics:**
 - **Level:** Director or Senior Manager, Data Engineering
-- **Team Size:** Managing 15-30+ engineers or multiple teams
-- **Focus:** Platform architecture, data infrastructure, or analytics engineering
+- **Team Size:** Managing 10~15+ engineers or multiple teams
+- **Focus:** Platform architecture, data infrastructure and modeling, or analytics engineering
 - **Culture:** High trust, bias for action, operational excellence, growth mindset
-- **Companies:** Tech companies at scale (Snowflake, Netflix, AWS, Databricks, etc.)
+- **Platforms and Technologies:** Tech companies at scale (Snowflake, Azure, AWS, Databricks, etc.)
 
 ---
 
