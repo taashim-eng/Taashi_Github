@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# Minimal dbt shim for test environments: accept commands and return success
-if [ "$1" = "build" ]; then
-  echo "Simulated dbt build for project: $@"
-  exit 0
-fi
-# Default: print args and exit success
-echo "Simulated dbt: $@"
-exit 0
