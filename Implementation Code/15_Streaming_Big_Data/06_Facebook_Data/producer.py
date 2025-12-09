@@ -1,9 +1,3 @@
-import os
-
-# CONFIGURATION
-base_dir = "/workspaces/Taashi_Github/Implementation Code/15_Streaming_Big_Data/06_Facebook_Data"
-
-producer_code = """
 import time
 import json
 import random
@@ -49,10 +43,3 @@ def start_stream():
 
 if __name__ == "__main__":
     start_stream()
-"""
-
-# Write the file
-file_path = os.path.join(base_dir, "producer.py")
-with open(file_path, "w") as f:
-    f.write(producer_code.strip())
-print(f"✅ Generated: {file_path}")

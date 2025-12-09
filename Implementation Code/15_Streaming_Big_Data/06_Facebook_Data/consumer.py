@@ -1,9 +1,3 @@
-import os
-
-base_dir = "/workspaces/Taashi_Github/Implementation Code/15_Streaming_Big_Data/06_Facebook_Data"
-
-# 1. CONSUMER CODE (Viral Detector)
-consumer_code = """
 import time
 from collections import defaultdict
 from utils_logger import setup_logger
@@ -47,32 +41,3 @@ def start_engine():
 
 if __name__ == "__main__":
     start_engine()
-"""
-
-# 2. UTILS CODE
-utils_code = """
-import logging
-import sys
-
-def setup_logger(name):
-    logger = logging.getLogger(name)
-    if not logger.handlers:
-        logger.setLevel(logging.INFO)
-        handler = logging.StreamHandler(sys.stdout)
-        formatter = logging.Formatter('%(asctime)s | %(levelname)s | %(message)s', datefmt='%H:%M:%S')
-        handler.setFormatter(formatter)
-        logger.addHandler(handler)
-    return logger
-"""
-
-# Write files
-def write_file(name, content):
-    path = os.path.join(base_dir, name)
-    with open(path, "w") as f:
-        f.write(content.strip())
-    print(f"✅ Generated: {path}")
-
-write_file("consumer.py", consumer_code)
-write_file("utils_logger.py", utils_code)
-write_file("requirements.txt", "pandas\nnumpy")
-write_file(".env", "ENV=PROD")
