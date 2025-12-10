@@ -209,7 +209,6 @@ I'm interested in discussing:
 - **Leadership opportunities** in data platforms and engineering management
 
 **Email:** taashir@gmail.com  
-**Phone:** (323) 794-6425  
 **LinkedIn:** [linkedin.com/in/taashi-m-74b14a161](https://linkedin.com/in/taashi-m-74b14a161)  
 **Location:** Seattle, WA (Remote)
 
