@@ -27,6 +27,52 @@ X processes 500 million posts per day. It is impossible and wasteful for a singl
 - `consumer.py`: The "Filter". It ignores everything except specific keywords (AI, Tech).
 - `utils_logger.py`: Logging config.
 
+### Architecture Diagram: X (Twitter) Firehose Filtering
+
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': { 'fontFamily': 'arial', 'fontSize': '14px'}}}%%
+graph TD
+    %% Definitions & Styling
+    classDef source fill:#E1D5E7,stroke:#9673A6,stroke-width:2px,color:#000;
+    classDef ingestion fill:#FFF2CC,stroke:#D6B656,stroke-width:2px,color:#000;
+    classDef processing fill:#DAE8FC,stroke:#6C8EBF,stroke-width:2px,color:#000;
+    classDef action fill:#D5E8D4,stroke:#82B366,stroke-width:2px,color:#000;
+    classDef waste fill:#F5F5F5,stroke:#666666,stroke-width:2px,color:#999,stroke-dasharray: 5 5;
+
+    subgraph Sources ["Global Data Sources"]
+        Users["Global Users<br/>(500M Tweets/Day)"]:::source
+        Topics["Diverse Topics<br/>(Sports, Politics, K-Pop)"]:::source
+    end
+
+    subgraph Ingestion ["The Firehose (High Volume)"]
+        Kafka["Apache Kafka<br/>Topic: global-firehose"]:::ingestion
+    end
+
+    subgraph Filtering ["Filter Engine (Consumer)"]
+        FilterService["Stream Processor<br/>(Python/Spark)"]:::processing
+        LogicGate{"Contains Keywords?<br/>(#AI, #Tech)"}:::processing
+    end
+
+    subgraph Destinations ["Downstream Actions"]
+        AnalyticsDB[("Tech Analytics DB<br/>(High Value Data)")]:::action
+        Discard["/dev/null<br/>(Discard Noise)"]:::waste
+    end
+
+    %% Data Flow
+    Users -->|"Emit Tweets"| Kafka
+    Topics -.->|"Context"| Users
+    Kafka -->|"Consume Full Stream"| FilterService
+    
+    FilterService -->|"Apply Rules"| LogicGate
+
+    %% Decision Logic
+    LogicGate -->|"Yes (Match)"| AnalyticsDB
+    LogicGate -->|"No (Irrelevant)"| Discard
+
+    linkStyle 2,3,4,5,6 stroke:#007ACC,stroke-width:2px,fill:none;
+```
+
+
 ### How to Run this Demo
 
 **Step 1: Install Dependencies**
