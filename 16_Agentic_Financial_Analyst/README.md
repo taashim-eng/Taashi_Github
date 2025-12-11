@@ -153,7 +153,7 @@ pip install -r requirements.txt
 ```
 
 ### What's Next?
-Consider these extensions:
+I am currently considering these extensions:
 - Connect to real APIs (Bloomberg, AlphaVantage)
 - Add retry logic with `tenacity` library
 - Implement caching for API calls
