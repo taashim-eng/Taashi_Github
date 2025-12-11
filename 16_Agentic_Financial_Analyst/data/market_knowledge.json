@@ -1,0 +1,28 @@
+{
+    "TSLA": {
+        "price": 245.3,
+        "pe_ratio": 70.5,
+        "news": [
+            "Tesla announces expansion of Gigafactory in Mexico.",
+            "Analysts worry about EV demand softening in Q4.",
+            "New battery technology promises 20% more range."
+        ],
+        "financials": {
+            "revenue_growth": "15%",
+            "operating_margin": "10%"
+        }
+    },
+    "NVDA": {
+        "price": 890.0,
+        "pe_ratio": 95.2,
+        "news": [
+            "Nvidia reveals new Blackwell AI chip.",
+            "Tech giants increase capex spend on AI infrastructure.",
+            "Export restrictions to China may impact future revenue."
+        ],
+        "financials": {
+            "revenue_growth": "260%",
+            "operating_margin": "55%"
+        }
+    }
+}
