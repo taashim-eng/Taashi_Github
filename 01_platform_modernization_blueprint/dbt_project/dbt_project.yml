@@ -1,9 +1,29 @@
-name: 'platform_modernization_blueprint'
+dbt_project_yml = """
+name: 'geico_modernization_demo'
 version: '1.0.0'
 config-version: 2
 
 profile: 'default'
 
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analysis"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
 models:
-  platform_modernization_blueprint:
-    +materialized: view
+  geico_modernization_demo:
+    # Materialization Strategy:
+    # Bronze is ephemeral (views) for speed.
+    # Silver is tables (cleansed storage).
+    # Gold is tables (optimized for BI).
+    bronze:
+      +materialized: view
+    silver:
+      +materialized: table
+    gold:
+      +materialized: table
+"""
